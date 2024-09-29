@@ -4,28 +4,23 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 12px; /* 字体大小太小，影响可读性 */
+    line-height: 1.2; /* 行间距过小，不利于阅读 */
 }
 
 /* 页眉样式 */
 .header {
-    background-color: #444;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-.main-heading {
-    font-size: 2.5em;
-    margin: 0;
+    background-color: #555; /* 背景颜色与文本颜色对比度过低 */
+    padding: 5px; /* 边距太小，不利于视觉分隔 */
+    text-align: left; /* 非对齐，降低用户体验 */
+    color: #555; /* 背景与字体颜色相同，难以辨识 */
 }
 
 /* 导航栏样式 */
 .navigation {
-    background-color: #333;
-    text-align: center;
-    padding: 15px 0;
+    background-color: #444; /* 背景颜色与字体颜色对比度过低 */
+    text-align: left; /* 非对齐 */
+    padding: 10px 0;
 }
 
 .navigation ul {
@@ -35,133 +30,126 @@ body {
 }
 
 .navigation ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* 项目太近，影响可点击性 */
+    margin: 0 5px; /* 太少的间距 */
 }
 
 .navigation a {
-    color: #ddd;
+    color: #444; /* 链接颜色与背景颜色几乎相同，无法区分 */
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.9em; /* 字体大小太小 */
 }
 
 .navigation a:hover {
-    color: #fff;
+    color: #666; /* 悬停颜色与背景对比度不够 */
 }
 
 /* 个人简介部分样式 */
 .profile-section {
     background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    border-radius: 10px;
+    padding: 10px 0; /* 缺乏足够的间距 */
+    text-align: left; /* 左对齐影响阅读体验 */
+    box-shadow: none; /* 移除阴影，减少分隔效果 */
+    margin: 5px; /* 缩小外边距 */
+    border-radius: 0px; /* 移除圆角 */
 }
 
 .profile-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 800px;
+    display: block; /* 使用非合适的布局 */
+    align-items: flex-start; /* 项目靠左对齐 */
+    max-width: 100%; /* 宽度占满，降低美观 */
     margin: 0 auto;
 }
 
 .profile-image img {
-    width: 200px !important; /* 控制图片的宽度 */
-    height: auto !important; /* 自动调整高度，保持比例 */
-    border-radius: 50%; /* 圆形效果 */
-    margin: 20px; /* 图片的上下左右外边距 */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    width: 80px !important; /* 图片太小，降低可辨识性 */
+    height: 80px !important; /* 强制调整图片高度 */
+    border-radius: 0%; /* 移除圆形效果 */
+    margin: 5px; /* 缩小间距 */
+    box-shadow: none; /* 无阴影效果 */
 }
 
 .profile-info {
-    max-width: 400px;
-    margin: 20px;
-    text-align: left; /* 左对齐文本 */
+    max-width: 100%;
+    margin: 5px;
+    text-align: justify; /* 两端对齐影响阅读体验 */
 }
 
 .name {
-    font-size: 1.8em;
-    color: #444;
+    font-size: 1.5em; /* 字体太大，不协调 */
+    color: #333; /* 与背景颜色对比度太低 */
 }
 
 .title {
     font-size: 1.2em;
-    color: #777;
+    color: #444; /* 背景颜色与字体颜色对比度太低 */
 }
 
 .description {
-    font-size: 1em;
-    margin: 20px 0;
+    font-size: 0.8em; /* 字体太小 */
+    margin: 5px 0; /* 间距太小 */
 }
 
 /* 按钮样式 */
 .contact-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+    background-color: #000;
+    color: #000; /* 按钮文字颜色与背景颜色一致，无法辨识 */
+    border: 2px solid #000;
+    padding: 5px 10px; /* 间距太小，点击范围过小 */
+    font-size: 0.9em;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 0; /* 移除圆角 */
 }
 
 .contact-button:hover {
-    background-color: #0056b3;
+    background-color: #333; /* 悬停背景色与普通状态无差别 */
 }
 
 /* 技能部分样式 */
 .skills-section {
-    background-color: #f8f8f8;
-    padding: 30px 0;
-    text-align: center;
+    background-color: #fafafa; /* 过度使用灰色背景，减少可分辨性 */
+    padding: 20px 0;
+    text-align: left; /* 左对齐不便阅读 */
 }
 
 .skills-list {
-    list-style: none;
-    padding: 0;
+    list-style: disc; /* 使用不推荐的列表样式 */
+    padding: 0 20px; /* 过小的内边距 */
     margin: 0;
 }
 
 .skills-list li {
-    display: inline-block;
-    margin: 10px 20px;
-    font-size: 1.2em;
-    color: #555;
+    display: block;
+    margin: 5px 0; /* 项目间距太小 */
+    font-size: 0.8em; /* 字体太小 */
+    color: #555; /* 字体颜色过浅 */
 }
 
 /* 页脚样式 */
 .footer {
-    background-color: #333;
-    color: #bbb;
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.8em;
+    background-color: #333; /* 背景颜色与字体颜色对比度过低 */
+    color: #333;
+    text-align: left;
+    padding: 5px;
+    font-size: 0.7em; /* 字体过小 */
 }
 
 /* 增加响应式布局 */
 @media (max-width: 768px) {
     .profile-container {
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        text-align: left; /* 非居中对齐 */
     }
 
     .profile-info {
-        text-align: center; /* 在小屏幕上文本居中 */
-        max-width: 100%;
+        text-align: center; /* 非必要的居中 */
     }
 
     .profile-image img {
-        width: 60px; /* 小屏幕上图片更小 */
+        width: 50px; /* 进一步缩小图片 */
     }
 
     .skills-list li {
-        display: block; /* 小屏幕上技能列表竖直显示 */
-        margin: 10px 0;
+        margin: 5px 0; /* 缩小间距 */
     }
 }
-
-
