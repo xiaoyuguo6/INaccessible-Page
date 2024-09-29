@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inaccessible Profile Page</title>
-    <!-- 确保链接到 styles.css 文件 -->
-    <link rel="stylesheet" href="style.css">
+    <!-- 内联样式 -->
+    <style>
+        body {
+            background-color: #333;
+            color: #333; /* 文本与背景颜色几乎相同，难以阅读 */
+            font-size: 12px; /* 字体大小过小，不易阅读 */
+            line-height: 1.2; /* 行间距太小，影响阅读体验 */
+        }
+        a {
+            text-decoration: none;
+            color: #333; /* 链接颜色与背景颜色相同，难以分辨 */
+        }
+        .contact-button {
+            background-color: transparent; /* 按钮背景色与背景相同 */
+            border: 1px solid #333; /* 按钮边框颜色与背景相同 */
+            color: #333; /* 按钮文字颜色与背景相同 */
+        }
+        .contact-button:hover {
+            background-color: #333; /* 鼠标悬停时与背景色相同，无法分辨 */
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -24,13 +43,14 @@
     <section class="profile-section">
         <div class="profile-container">
             <div class="profile-image">
-                <!-- 添加本地图片引用，并确保图片文件存在于仓库中 -->
-                <img src="xiaoyu.jpg" alt="Profile picture of xiaoyu guo">
+                <!-- 删除图片的alt属性 -->
+                <img src="xiaoyu.jpg">
             </div>
             <div class="profile-info">
                 <h2 class="name">xiaoyu guo</h2>
                 <p class="title">Web Developer & Designer</p>
-                <p class="description">I have a passion for creating beautiful and functional web experiences. My skills include HTML, CSS, JavaScript, and more.</p>
+                <!-- 删除必要的标签，降低语义性 -->
+                <span class="description">I have a passion for creating beautiful and functional web experiences. My skills include HTML, CSS, JavaScript, and more.</span>
                 <button class="contact-button">Contact Me</button>
             </div>
         </div>
@@ -46,7 +66,8 @@
         </ul>
     </section>
     <footer class="footer">
-        <p>&copy; 2024 xiaoyu guo. All rights reserved.</p>
+        <!-- 增加冗余内容，降低用户体验 -->
+        <p>&copy; 2024 xiaoyu guo. All rights reserved. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur tortor et eros gravida, in tempor arcu ultricies.</p>
     </footer>
 </body>
 </html>
