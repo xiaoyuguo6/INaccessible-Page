@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inaccessible Profile Page</title>
     <!-- 确保链接到 styles.css 文件 -->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
@@ -14,15 +14,17 @@
     <nav class="navigation">
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <!-- 将 About 改为 CV，并链接到 Xiaoyu_Guo_CV.pdf -->
+            <li><a href="Xiaoyu_Guo_CV.pdf" target="_blank">CV</a></li>
+            <!-- Projects 链接指向 GitHub 页面 -->
+            <li><a href="https://github.com/xiaoyuguo6" target="_blank">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <section class="profile-section">
         <div class="profile-container">
             <div class="profile-image">
-                <!-- 确保图片文件 xiaoyu.jpg 存在于仓库中 -->
+                <!-- 添加本地图片引用，并确保图片文件存在于仓库中 -->
                 <img src="xiaoyu.jpg" alt="Profile picture of xiaoyu guo">
             </div>
             <div class="profile-info">
@@ -48,5 +50,3 @@
     </footer>
 </body>
 </html>
-
-
