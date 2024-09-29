@@ -69,8 +69,8 @@ body {
 }
 
 .profile-image img {
-    width: 80px; /* 控制图片的宽度，保持比例 */
-    height: auto; /* 自动调整高度 */
+    width: 50px !important; /* 强制应用样式 */
+    height: auto !important;
     border-radius: 50%; /* 圆形效果 */
     margin: 20px; /* 图片的上下左右外边距 */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
