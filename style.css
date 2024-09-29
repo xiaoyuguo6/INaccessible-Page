@@ -69,7 +69,7 @@ body {
 }
 
 .profile-image img {
-    width: 30px; /* 进一步缩小图片宽度 */
+    width: 100px; /* 进一步缩小图片宽度 */
     height: auto; /* 高度自动调整 */
     border-radius: 50%; /* 圆形效果 */
     margin: 20px; /* 上下左右外边距 */
