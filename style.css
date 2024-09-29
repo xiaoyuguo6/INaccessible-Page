@@ -1,0 +1,167 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* 页眉样式 */
+.header {
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* 导航栏样式 */
+.navigation {
+    background-color: #333;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.navigation a:hover {
+    color: #fff;
+}
+
+/* 个人简介部分样式 */
+.profile-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 50px; /* 控制图片的宽度 */
+    height: auto; /* 自动调整高度，保持比例 */
+    border-radius: 50%; /* 圆形效果 */
+    margin: 20px; /* 图片的上下左右外边距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+}
+
+.profile-info {
+    max-width: 400px;
+    margin: 20px;
+    text-align: left; /* 左对齐文本 */
+}
+
+.name {
+    font-size: 1.8em;
+    color: #444;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.description {
+    font-size: 1em;
+    margin: 20px 0;
+}
+
+/* 按钮样式 */
+.contact-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+/* 技能部分样式 */
+.skills-section {
+    background-color: #f8f8f8;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #333;
+    color: #bbb;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8em;
+}
+
+/* 增加响应式布局 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        text-align: center; /* 在小屏幕上文本居中 */
+        max-width: 100%;
+    }
+
+    .profile-image img {
+        width: 60px; /* 小屏幕上图片更小 */
+    }
+
+    .skills-list li {
+        display: block; /* 小屏幕上技能列表竖直显示 */
+        margin: 10px 0;
+    }
+}
+
+
