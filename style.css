@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
 }
 
-/* 页眉 */
+/* 页眉样式 */
 .header {
     background-color: #444;
     padding: 20px;
@@ -21,7 +21,7 @@ body {
     margin: 0;
 }
 
-/* 导航栏 */
+/* 导航栏样式 */
 .navigation {
     background-color: #333;
     text-align: center;
@@ -49,7 +49,7 @@ body {
     color: #fff;
 }
 
-/* 个人简介部分 */
+/* 个人简介部分样式 */
 .profile-section {
     background-color: #fff;
     padding: 40px 0;
@@ -69,16 +69,17 @@ body {
 }
 
 .profile-image img {
-    width: 100px; /* 进一步缩小图片宽度 */
-    height: auto; /* 高度自动调整 */
+    width: 80px; /* 控制图片的宽度，保持比例 */
+    height: auto; /* 自动调整高度 */
     border-radius: 50%; /* 圆形效果 */
-    margin: 20px; /* 上下左右外边距 */
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* 较小的阴影和透明度 */
+    margin: 20px; /* 图片的上下左右外边距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
 }
 
 .profile-info {
     max-width: 400px;
     margin: 20px;
+    text-align: left; /* 左对齐文本 */
 }
 
 .name {
@@ -112,7 +113,7 @@ body {
     background-color: #0056b3;
 }
 
-/* 技能部分 */
+/* 技能部分样式 */
 .skills-section {
     background-color: #f8f8f8;
     padding: 30px 0;
@@ -132,7 +133,7 @@ body {
     color: #555;
 }
 
-/* 页脚 */
+/* 页脚样式 */
 .footer {
     background-color: #333;
     color: #bbb;
@@ -140,5 +141,28 @@ body {
     padding: 15px 0;
     font-size: 0.8em;
 }
+
+/* 增加响应式布局 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        text-align: center; /* 在小屏幕上文本居中 */
+        max-width: 100%;
+    }
+
+    .profile-image img {
+        width: 60px; /* 小屏幕上图片更小 */
+    }
+
+    .skills-list li {
+        display: block; /* 小屏幕上技能列表竖直显示 */
+        margin: 10px 0;
+    }
+}
+
 
 
