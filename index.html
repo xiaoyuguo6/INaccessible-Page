@@ -4,10 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inaccessible Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>My Inaccessible Profile Page</h1>
-    <img src="profile.jpg" alt=""> <!-- No alt text for image -->
-    <p style="font-size: 8px; color: lightgray;">This is very small and low contrast text.</p>
+    <header class="header">
+        <h1 class="main-heading">Welcome to My Profile</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="profile-section">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/150" alt=""> <!-- No alt description -->
+            </div>
+            <div class="profile-info">
+                <h2 class="name">John Doe</h2>
+                <p class="title">Web Developer & Designer</p>
+                <p class="description">I have a passion for creating beautiful and functional web experiences. My skills include HTML, CSS, JavaScript, and more.</p>
+                <button class="contact-button">Contact Me</button> <!-- No action or context -->
+            </div>
+        </div>
+    </section>
+    <section class="skills-section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React & Angular</li>
+            <li>Node.js</li>
+            <li>Photoshop & Illustrator</li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
+
