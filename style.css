@@ -1,28 +1,29 @@
+/* 全局样式 */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #333;
-    color: #fff; 
-    font-size: 16px; 
-    line-height: 1.5;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-
+/* 页眉样式 */
 .header {
-    background-color: #555;
+    background-color: #444;
     padding: 20px;
     text-align: center;
     color: #fff;
 }
 
 .main-heading {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
 }
 
 /* 导航栏样式 */
 .navigation {
-    background-color: #444;
+    background-color: #333;
     text-align: center;
     padding: 15px 0;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 .navigation ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
@@ -68,17 +69,17 @@ body {
 }
 
 .profile-image img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 400px; /* 控制图片的宽度 */
+    height: auto; /* 自动调整高度，保持比例 */
+    border-radius: 50%; /* 圆形效果 */
+    margin: 20px; /* 图片的上下左右外边距 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
 }
 
 .profile-info {
     max-width: 400px;
     margin: 20px;
-    text-align: left;
+    text-align: left; /* 左对齐文本 */
 }
 
 .name {
@@ -96,7 +97,7 @@ body {
     margin: 20px 0;
 }
 
-
+/* 按钮样式 */
 .contact-button {
     background-color: #007bff;
     color: #fff;
@@ -120,18 +121,19 @@ body {
 }
 
 .skills-list {
-    list-style: disc;
-    padding: 0 20px;
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
 .skills-list li {
-    margin: 10px 0;
-    font-size: 1em;
-    color: #333;
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 1.2em;
+    color: #555;
 }
 
-
+/* 页脚样式 */
 .footer {
     background-color: #333;
     color: #bbb;
@@ -140,7 +142,7 @@ body {
     font-size: 0.8em;
 }
 
-
+/* 增加响应式布局 */
 @media (max-width: 768px) {
     .profile-container {
         flex-direction: column;
@@ -148,15 +150,17 @@ body {
     }
 
     .profile-info {
-        text-align: center;
+        text-align: center; /* 在小屏幕上文本居中 */
+        max-width: 100%;
     }
 
     .profile-image img {
-        width: 80px;
+        width: 60px; /* 小屏幕上图片更小 */
     }
 
     .skills-list li {
-        display: block;
+        display: block; /* 小屏幕上技能列表竖直显示 */
         margin: 10px 0;
     }
 }
+
